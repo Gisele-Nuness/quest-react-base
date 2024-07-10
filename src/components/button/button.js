@@ -2,11 +2,7 @@ import './button.css'
 
 const Button = (props) => {
 
-    const alertMessage = () => {
-        alert(`A label desse botão é ${props.label}`)
-    } 
-
-    return <button className="btn" onClick={alertMessage}>{props.label}</button>
+    return <button className="btn" onClick={() => alert(`A label desse botão é ${props.label}`)}>{props.label}</button>
 }
 
 Button.defaultProps = {
